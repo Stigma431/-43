@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 header {
@@ -25,6 +27,8 @@ header .header-wrapper .logo {
   width: 3.385vw;
   height: 4.167vw;
   margin-right: 1.406vw;
+  padding: 0.26vw 0;
+  box-sizing: content-box;
 }
 header .header-wrapper #menu__toggle {
   display: none;
@@ -34,8 +38,6 @@ header .header-wrapper .menu__btn {
   /* используем flex для центрирования содержимого */
   align-items: center;
   /* центрируем содержимое кнопки */
-  position: absolute;
-  left: 7.906vw;
   width: 1.903vw;
   height: 1.903vw;
   cursor: pointer;
@@ -46,7 +48,7 @@ header .header-wrapper .menu__btn > span::before,
 header .header-wrapper .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 2vw;
   height: 0.146vw;
   background-color: #000000;
   transition: 0.3s;
@@ -111,4 +113,23 @@ header .header-wrapper #menu__toggle:checked ~ .menu-box {
 header .header-wrapper .menu-box ul li {
   width: 30.928vw;
   list-style-type: none;
+}
+header .header-wrapper .main-nav {
+  display: flex;
+  margin-left: 3.958vw;
+}
+header .header-wrapper .main-nav .main-menu {
+  display: flex;
+}
+header .header-wrapper .main-nav .main-menu__item {
+  padding: 0.26vw 0.833vw;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+header .header-wrapper .main-nav .main-menu__item a {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
